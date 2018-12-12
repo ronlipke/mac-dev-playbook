@@ -1,0 +1,147 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_sudoers: yes
+configure_terminal: yes
+configure_macos: yes
+
+repos_dir: ~/repos/
+
+dotfiles_repo: https://github.com/ronlipke/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/repos/dotfiles
+dotfiles_files:
+  - .bash_profile
+  - .config
+  - .gitconfig
+  - .gitignore
+  - .macos
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - archey
+  - bash
+  - bash-completion
+  - bash-git-prompt
+  - bat
+  - coreutils
+  - cowsay
+  - envchain
+  - exa
+  - fd
+  - figlet
+  - git
+  - go
+  - gnupg
+  - htop
+  - iperf
+  - jq
+  - kubernetes-cli
+  - lolcat
+  - mackup
+  - micro
+  - ncdu
+  - neofetch
+  - nmap
+  - node
+  - openssl
+  - python3
+  - p7zip
+  - shellcheck
+  - sqlite
+  - ssh-copy-id
+  - the_silver_searcher
+  - terraform
+  - tree
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - alfred
+  - anylist
+  - atom
+  - bartender
+  - discord
+  - docker
+  - dropbox
+  - droplr
+  - firefox
+  - font-anonymous-pro
+  - font-dejavu-sans
+  - font-droid-sans-mono-for-powerline
+  - font-inconsolata
+  - font-inconsolata-dz
+  - font-open-sans
+  - font-roboto-mono
+  - font-ubuntu-mono-derivative-powerline
+  - font-ubuntumono-nerd-font
+  - font-ubuntumono-nerd-font-mono
+  - google-chrome
+  - google-cloud-sdk
+  - gpg-suite
+  - istat-menus
+  - iterm2
+  - kaleidoscope
+  - karabiner-elements
+  - keybase
+  - lastfm
+  - launchcontrol
+  - moom
+  - rocket
+  - slack
+  - spotify
+  - sublime-text
+  - textexpander
+  - tidal
+  - twitch
+  - vagrant
+  - virtualbox
+  - virtualbox-extension-pack
+  - visual-studio-code
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+# signin to the MAS from the cli is disabled in 10.14 Mojave
+mas_email: ""
+mas_password: ""
+mas_installed_apps:
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 924726344, name:  "Deliveries" }
+  - { id: 568494494, name: "Pocket" }
+  - { id: 866773894, name: "Quiver" }
+  - { id: 904280696, name: "Things3" }
+  - { id: 1233861775, name: "Acorn" }
+  - { id: 1091189122, name: "Bear" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 1055511498, name: "DayOne" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 408981434, name: "iMovie" }
+
+macos_script: "~/.macos"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+gem_packages: []
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+  # - name: webpack
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+pip_packages: []
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks:
+  - post-tasks.yml
