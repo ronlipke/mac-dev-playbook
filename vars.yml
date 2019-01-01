@@ -71,6 +71,7 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - droplr
+  - expressvpn
   - firefox
   - font-anonymous-pro
   - font-dejavu-sans
@@ -93,7 +94,9 @@ homebrew_cask_apps:
   - lastfm
   - launchcontrol
   - moom
+  - panic-unison
   - rocket
+  - simple-comic
   - slack
   - spotify
   - sublime-text

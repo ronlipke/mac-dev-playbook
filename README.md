@@ -51,7 +51,9 @@ There are still quite a few things to do manually after this playbook is run.  S
 - Finder > Show PathBar
 - Finder > Disable warning when changing a file extension
 - Sign in to iCloud. Disable Mail.
+- Fastmail - generate new app passsword
 - Internet Accounts > Enable [fastmail](https://www.fastmail.com/)
+- Mail - update Fastmail SMTP app password
 - Date and Time > set to 24 hour clock and show date
 - Security > allow Apple Watch to unlock mac
 - Sharing > set name to a Middle-Earth location (my ultra nerdy naming scheme)
@@ -62,6 +64,7 @@ There are still quite a few things to do manually after this playbook is run.  S
 - .ssh - generate new keys, add to Github
 - TextExpander - login, hide dock icon, set to launch at login
 - Setup Alfred. Activate PowerPack license, enable sync, swap shortcut to `⌘ + Space`, enable clipboard history.
+- Droplr - Sign in, set to launch at login.
 - Copy iTerm preferences - This has been wonky lately.  Need to look into [mackup](https://github.com/lra/mackup) again or use a separate folder for each machine.
 - VS Code - Create new github token with gist permissions for `Settings Sync` and one for VS Code with `repo` permissions.  Run initial `Settings Sync` download settings.  Login to Github.
 - Atom sync - Create new github token with gist permissions for `sync-settings` . Run initial `settings-sync` restore. Login with Github.
@@ -77,6 +80,9 @@ There are still quite a few things to do manually after this playbook is run.  S
 - Authenticate last.fm, turn off device scrobbling
 - Install Eagle. Register, import library from icloud > documents > world.library
 - Activate kaleidoscope license (url is in mail)
+- Unison - setup usenet servers
+- Rocket - enable Accessibility access, activate license
+- Simple Comic - open to install quicklook plugin
 
 ### Applications/packages to be added:
 
