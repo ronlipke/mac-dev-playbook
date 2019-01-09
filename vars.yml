@@ -36,6 +36,7 @@ homebrew_installed_packages:
   - gnupg
   - htop
   - iperf
+  - jo
   - jq
   - kubernetes-cli
   - lolcat
